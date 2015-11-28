@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="185dp" >
+    <!-- 放置轮播图图片viewpager使用的线性布局 -->
+    <!--<LinearLayout
+        android:id="@+id/ll_roll_view"
+        android:layout_width="match_parent"
+        android:layout_height="185dp">
+    </LinearLayout>-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="185dp">
+    </android.support.v4.view.ViewPager>
+    <RelativeLayout
+        android:background="#6666"
+        android:layout_alignBottom="@id/vp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:text="图片标题"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:id="@+id/ll_dot"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group
+        android:checkableBehavior="single">
+        <item android:id="@+id/navigation_item1"
+              android:checkable="true"
+              android:title="我的"
+              />
+        <item android:id="@+id/navigation_item2"
+              android:checkable="true"
+              android:title="你的"
+              />
+        <item android:id="@+id/navigation_item3"
+              android:checkable="true"
+              android:title="他的"
+              />
+    </group>
+
+    <item android:id="@+id/navigation_sub"
+          android:title="谁他妈的"
+        >
+        <menu>
+            <item android:id="@+id/navigation_sub_item1"
+                  android:checkable="true"
+                  android:title="你他妈的"
+                  />
+            <item android:id="@+id/navigation_sub_item2"
+                  android:checkable="true"
+                  android:title="你他妈的"
+                  />
+            <item android:id="@+id/navigation_sub_item3"
+                  android:checkable="true"
+                  android:title="你他妈的"
+                  />
+        </menu>
+    </item>
+</menu>
